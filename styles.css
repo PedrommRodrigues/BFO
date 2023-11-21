@@ -38,7 +38,7 @@ h1 {
   max-width: 1920px;
   height: 100%;
   margin: 0 auto;
-  /* background: url(Images/front\ page.jpg) no-repeat center center/cover; */
+  background: url(Images/front\ page.jpg) no-repeat center center/cover;
 }
 
 /* --------------------------------- Header --------------------------------- */
@@ -64,6 +64,7 @@ h1 {
 
 .title h1 {
   font-size: 60px;
+  color: #fff;
 }
 
 .title h2 {
