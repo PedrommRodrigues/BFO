@@ -41,6 +41,22 @@ h1 {
   background: url(Images/front\ page.jpg) no-repeat center center/cover;
 }
 
+button {
+  padding: 5px 7px;
+  background-color: #0f293c;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 2px;
+  font-weight: light;
+}
+
+button:hover {
+  background-color: #1a3f54;
+}
+
 /* --------------------------------- Header --------------------------------- */
 
 .header {
@@ -110,32 +126,6 @@ h1 {
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.header-bottom button {
-  background-color: #0f293c;
-  padding: 5px;
-  border-radius: 3px;
-  font-size: 16px;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  font-family: "Futura LT", sans-serif;
-}
-
-.header-bottom button {
-  background-color: #0f293c;
-  padding: 5px;
-  font-size: 16px;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  font-family: "Futura LT", sans-serif;
-  transition: background-color 0.3s;
-}
-
-.header-bottom button:hover {
-  background-color: #1a3f54;
-}
-
 /* -------------------------------- Historial ------------------------------- */
 
 .history {
@@ -168,16 +158,8 @@ h1 {
 }
 
 .history button {
-  background-color: #0f293c;
   margin-top: 30px;
   border-radius: 3px;
-  padding: 5px;
-  font-size: 16px;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  font-family: "Futura LT", sans-serif;
-  transition: background-color 0.3s;
 }
 
 .history button:hover {
@@ -357,12 +339,18 @@ h1 {
 
 .sponsors {
   background-color: #fff;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
   text-align: center;
 }
 
-.sponsers h1 {
+.sponsors h1 {
   margin-bottom: 15px;
+}
+
+.sponsors p {
+  color: #2f2e2e;
+  /* font-size: 18px; */
+  margin: 30px 0;
 }
 
 .logos {
@@ -375,11 +363,31 @@ h1 {
 .logo {
   height: 180px;
   width: 100%;
+  position: relative;
 }
 
 .logos img {
   width: 100%;
   height: 100%;
+}
+
+.logo > .img-description {
+  position: absolute;
+  height: 100%;
+  inset: 0;
+  display: flex;
+  color: #fff;
+  font-size: 30px;
+  font-weight: lighter;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+  opacity: 0;
+}
+
+.logo > .img-description:hover {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
 }
 
 /* --------------------------------- Contact -------------------------------- */
@@ -422,15 +430,6 @@ form p {
 form button {
   width: 55px;
   align-self: flex-end;
-  cursor: pointer;
-  background-color: #0f293c;
-  padding: 5px;
-  border-radius: 3px;
-  font-size: 16px;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  font-family: "Futura LT", sans-serif;
 }
 
 input,
@@ -455,3 +454,26 @@ form div {
 .contacts-text {
   flex: 1;
 }
+
+/* --------------------------------- partner -------------------------------- */
+
+.partner {
+  text-align: center;
+  background-color: #cccccc;
+  padding: 40px 0 20px 0;
+}
+
+.partner > p {
+  color: #fff;
+  margin: 25px 0;
+}
+
+.partner span {
+  transition: padding 0.2s;
+}
+
+.partner > button:hover span {
+  padding-left: 5px;
+}
+
+/* --------------------------------- footer --------------------------------- */
