@@ -118,6 +118,7 @@ button:hover {
 
 .header-bottom {
   margin-top: 400px;
+  padding-bottom: 40px;
   width: 30%;
   text-align: center;
   color: #fff;
@@ -130,11 +131,18 @@ button:hover {
 
 .history {
   width: 100%;
-  padding: 50px 320px;
+  padding: 50px 20px;
   background-color: #fff;
   color: #000;
   text-align: center;
-  margin-top: 550px;
+  align-items: center;
+}
+
+.text-section {
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  max-width: 80%;
 }
 
 .history h1 {
@@ -273,7 +281,7 @@ button:hover {
 
 .escola-text p {
   margin: 13px 0 30px 0;
-  font-size: 16px;
+  font-size: 15px;
   color: #605e5e;
 }
 
@@ -460,7 +468,7 @@ form div {
 .partner {
   text-align: center;
   background-color: #cccccc;
-  padding: 40px 0 20px 0;
+  padding: 40px 0;
 }
 
 .partner > p {
@@ -477,3 +485,62 @@ form div {
 }
 
 /* --------------------------------- footer --------------------------------- */
+
+.footer {
+  background-color: #0f293c;
+  color: #cccccc;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text {
+  font-size: 20px;
+  color: #fff;
+  font-family: "Gentium Basic", sans-serif;
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  max-width: 50px;
+}
+
+.footer-logo img {
+  width: 100%;
+  scale: 1/1;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.social-icons i {
+  cursor: pointer;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-contacts > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-contacts p {
+  font-size: 14px;
+}
