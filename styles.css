@@ -38,10 +38,10 @@ h1 {
   max-width: 1920px;
   height: 100%;
   margin: 0 auto;
-  background: url(Images/front\ page.jpg) no-repeat center center/cover;
+  /* background: url(Images/front\ page.jpg) no-repeat center center/cover; */
 }
 
-button {
+.btn-blue {
   padding: 5px 7px;
   background-color: #0f293c;
   font-size: 16px;
@@ -53,7 +53,7 @@ button {
   font-weight: light;
 }
 
-button:hover {
+.btn-blue:hover {
   background-color: #1a3f54;
 }
 
@@ -62,6 +62,7 @@ button:hover {
 .header {
   display: flex;
   flex-direction: column;
+  background: url(Images/front\ page.jpg) no-repeat center center/cover;
 }
 
 .header-top {
@@ -125,6 +126,73 @@ button:hover {
   font-size: 35px;
   padding-left: 7%;
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 500px) {
+  .header-top {
+    margin-right: 0px;
+  }
+
+  .navbar {
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .header-bottom {
+    align-items: center;
+    width: 80%;
+    margin: 300px auto;
+    font-size: 29px;
+  }
+
+  .header-bottom p {
+    margin-bottom: 10px;
+  }
+
+  .btn-blue {
+    padding: 15px 25px;
+  }
+
+  .hamburger {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    width: 35px;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    margin-right: 20px;
+  }
+
+  .hamburger .bar,
+  .hamburger:after,
+  .hamburger:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0px;
+    transition: 0.2s;
+  }
+
+  .hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+
+  .hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
 }
 
 /* -------------------------------- Historial ------------------------------- */
@@ -235,6 +303,12 @@ button:hover {
   filter: brightness(0%);
 }
 
+@media screen and (max-width: 500px) {
+  .banda-sections {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 /* --------------------------------- Escola --------------------------------- */
 
 .escola {
@@ -293,6 +367,49 @@ button:hover {
 .escola-img img {
   width: 100%;
   height: 100%;
+}
+
+.carousel-inner {
+  display: none;
+}
+
+.carousel-inner img {
+  width: 297px;
+  height: 176px;
+}
+
+@media screen and (max-width: 500px) {
+  .escola {
+    flex-direction: column;
+    padding: 80px 20px;
+  }
+
+  .escola-logo {
+    display: none;
+  }
+
+  .escola-img {
+    display: none;
+  }
+
+  .carousel-inner {
+    display: block;
+  }
+
+  .escola-text {
+    width: 80%;
+    margin-left: 0px;
+  }
+
+  .escola-text h1 {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .escola-text h2 {
+    text-align: center;
+    margin-top: 40px;
+  }
 }
 
 /* --------------------------------- Eventos -------------------------------- */
@@ -463,6 +580,29 @@ form div {
   flex: 1;
 }
 
+@media screen and (max-width: 1500px) {
+  iframe {
+    width: 400px;
+    height: 350px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  iframe {
+    width: 330px;
+    height: 330px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  iframe {
+    width: 280px;
+    height: 330px;
+    margin-top: 50px;
+  }
+}
 /* --------------------------------- partner -------------------------------- */
 
 .partner {
