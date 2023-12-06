@@ -224,7 +224,7 @@ p {
 .subtitle {
   text-align: center;
   font-size: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 25px !important;
   color: #605e5e;
 }
 
@@ -243,6 +243,14 @@ p {
 
 .history button:hover {
   background-color: #1a3f54;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.hide-button {
+  color: #31759d;
 }
 
 /* --------------------------------- A banda -------------------------------- */
@@ -402,6 +410,7 @@ p {
   .escola-text {
     width: 80%;
     margin-left: 0px;
+    text-align: center;
   }
 
   .escola-text h1 {
@@ -412,6 +421,10 @@ p {
   .escola-text h2 {
     text-align: center;
     margin-top: 40px;
+  }
+
+  .carousel-item > img {
+    width: 400px;
   }
 }
 
@@ -518,6 +531,12 @@ p {
   opacity: 1;
 }
 
+@media screen and (max-width: 500px) {
+  .logos {
+    flex-direction: column;
+  }
+}
+
 /* --------------------------------- Contact -------------------------------- */
 
 .contacts {
@@ -525,8 +544,12 @@ p {
   background-color: #cfdff2;
   display: flex;
   gap: 30px;
-  align-items: center;
   text-align: center;
+}
+
+.map {
+  padding-left: 50px;
+  margin-top: auto;
 }
 
 .contacts-text {
@@ -602,9 +625,34 @@ form div {
 
 @media screen and (max-width: 800px) {
   iframe {
-    width: 280px;
+    width: 360px;
     height: 330px;
     margin-top: 50px;
+  }
+  .map {
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+
+  .contacts {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  iframe {
+    margin-top: 0px;
+    width: 270px;
+  }
+
+  form {
+    align-content: center;
+    margin: 60px auto;
+  }
+
+  form button {
+    width: auto;
   }
 }
 /* --------------------------------- partner -------------------------------- */
@@ -622,6 +670,10 @@ form div {
 
 .partner span {
   transition: padding 0.2s;
+}
+
+.partner > button {
+  margin-top: 20px;
 }
 
 .partner > button:hover span {
