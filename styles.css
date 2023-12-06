@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #e5e4e4;
+  background-color: #e5e4e4 !important;
   height: 100%;
   margin: 0 auto;
   font-family: "Futura", sans-serif;
@@ -32,13 +32,16 @@ h1 {
   color: #0f293c;
 }
 
+p {
+  margin-bottom: 0 !important;
+}
+
 .container {
   width: 90%;
   min-height: 100%;
   max-width: 1920px;
   height: 100%;
   margin: 0 auto;
-  /* background: url(Images/front\ page.jpg) no-repeat center center/cover; */
 }
 
 .btn-blue {
@@ -199,7 +202,7 @@ h1 {
 
 .history {
   width: 100%;
-  padding: 50px 20px;
+  padding: 100px 20px;
   background-color: #fff;
   color: #000;
   text-align: center;
@@ -316,7 +319,7 @@ h1 {
   background-color: #fff;
   align-items: center;
   justify-content: space-evenly;
-  padding: 40px 200px;
+  padding: 100px 200px;
 }
 
 .escola-logo {
@@ -419,7 +422,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0;
+  padding: 100px 0;
 }
 
 .eventos h1 {
@@ -464,7 +467,7 @@ h1 {
 
 .sponsors {
   background-color: #fff;
-  padding: 40px 0 0 0;
+  padding: 100px 0 0 0;
   text-align: center;
 }
 
@@ -544,6 +547,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 90%;
+  gap: 3px;
 }
 
 form p {
@@ -608,7 +612,7 @@ form div {
 .partner {
   text-align: center;
   background-color: #cccccc;
-  padding: 40px 0;
+  padding: 100px 0;
 }
 
 .partner > p {
@@ -656,6 +660,7 @@ form div {
 .social {
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 
 .social-icons {
