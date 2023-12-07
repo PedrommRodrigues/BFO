@@ -14,6 +14,4 @@ function expandHanddler() {
   } else {
     spanText.innerText = "Ver menos...";
   }
-
-  console.log(spanText.innerText);
 }

@@ -476,6 +476,18 @@ p {
   margin: 0 20px;
 }
 
+@media screen and (max-width: 500px) {
+  .eventos-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .eventos-section span {
+    display: none;
+  }
+}
+
 /* -------------------------------- Sponsors -------------------------------- */
 
 .sponsors {
@@ -490,7 +502,6 @@ p {
 
 .sponsors p {
   color: #2f2e2e;
-  /* font-size: 18px; */
   margin: 30px 0;
 }
 
@@ -740,4 +751,16 @@ form div {
 
 .footer-contacts p {
   font-size: 14px;
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footer-contacts {
+    flex-direction: row;
+  }
 }
