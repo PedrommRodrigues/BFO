@@ -1,6 +1,8 @@
 function toggleMenu() {
-  const menu = document.querySelector(".hamburger");
-  menu.classList.toggle("is-active");
+  const menuButton = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".menu");
+  menuButton.classList.toggle("is-active");
+  navMenu.classList.toggle("centered");
 }
 
 function expandHanddler() {

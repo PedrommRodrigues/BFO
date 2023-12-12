@@ -42,6 +42,7 @@ p {
   max-width: 1920px;
   height: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
 .btn-blue {
@@ -63,6 +64,7 @@ p {
 /* --------------------------------- Header --------------------------------- */
 
 .header {
+  position: relative;
   display: flex;
   flex-direction: column;
   background: url(Images/front\ page.jpg) no-repeat center center/cover;
@@ -137,6 +139,35 @@ p {
   display: none;
 }
 
+.menu {
+  width: 100%;
+  position: absolute;
+  top: -100%;
+  color: #fff;
+  background-color: #31759d;
+  transition: all 0.4s ease-in;
+}
+
+.menu > ul {
+  padding: 0;
+  margin: 60px 0 0 0;
+  width: 100%;
+}
+
+.menu ul li {
+  padding: 10px 0px 10px 10px;
+  border-bottom: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.menu ul li:hover {
+  background-color: #ddd; /* Change the background color to your desired hover effect color */
+}
+
+.centered {
+  top: 0px;
+}
+
 @media screen and (max-width: 1000px) {
   .header-top {
     margin-right: 30px;
@@ -182,7 +213,9 @@ p {
     background: none;
     outline: none;
     border: none;
-    margin-right: 20px;
+    margin-right: 0px;
+    margin-top: -140px;
+    z-index: 100;
   }
 
   .hamburger .bar,
