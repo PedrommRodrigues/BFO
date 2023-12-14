@@ -816,7 +816,7 @@ form div {
   }
 }
 
-/* -------------------------------- Hostorial ------------------------------- */
+/* -------------------------------- Historial ------------------------------- */
 
 .picture-container {
   display: grid;
@@ -846,4 +846,10 @@ form div {
   .picture-container {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+/* -------------------------------- Contactos ------------------------------- */
+
+.red {
+  color: red;
 }
