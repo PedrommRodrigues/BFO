@@ -928,6 +928,16 @@ form div {
   gap: 10px;
 }
 
+.more-sponsors {
+  background-color: #cfdff2;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.more-sponsors h1 {
+  padding-bottom: 50px;
+}
+
 @media screen and (max-width: 1000px) {
   .partner-form {
     width: 70%;
