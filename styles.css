@@ -259,8 +259,8 @@ p {
 }
 
 .text-section {
-  text-align: center;
-  align-items: center;
+  /* text-align: center; */
+  /* align-items: center; */
   margin: auto;
   max-width: 80%;
 }
@@ -281,7 +281,7 @@ p {
   font-family: "Futura LT", sans-serif;
   color: #605e5e;
   font-size: 16px;
-  text-align: left;
+  /* text-align: left; */
   line-height: 1.5rem;
 }
 
