@@ -641,7 +641,6 @@ form p {
 }
 
 form button {
-  /* width: 55px; */
   align-self: flex-end;
 }
 
