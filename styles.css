@@ -561,6 +561,11 @@ p {
   max-width: 1920px;
   width: 100%;
 }
+.logos > a {
+  height: 180px;
+  width: 100%;
+  /* position: relative; */
+}
 
 .logo {
   height: 180px;
