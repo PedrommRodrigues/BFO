@@ -120,10 +120,6 @@ p {
   padding: 0;
 }
 
-.active {
-  border-bottom: 1px solid #3a3a3a;
-}
-
 .header-bottom {
   margin-top: 400px;
   padding-bottom: 40px;
@@ -247,7 +243,7 @@ p {
   }
 }
 
-/* -------------------------------- Historial ------------------------------- */
+/* ---------------------------------------- Historial -------------------------------------- */
 
 .history {
   width: 100%;
@@ -603,7 +599,7 @@ p {
   }
 }
 
-/* --------------------------------- Contact -------------------------------- */
+/* ------------------------------------------- Contact ------------------------------------------- */
 
 .contacts {
   padding: 40px 0;
@@ -959,4 +955,57 @@ form div {
   .partner-form {
     width: 90%;
   }
+}
+
+/* ----------------------------------------- EMBO Escola ----------------------------------------- */
+
+.embo-escola {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.embo-logo {
+  width: 250px;
+}
+
+.embo-logo > img {
+  width: 100%;
+}
+
+.school-administrators {
+  background-color: #b8cad8;
+  margin: auto;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 100px 0;
+}
+
+.school-administrators div {
+  width: 400px;
+}
+
+.school-administrators h5 {
+  color: #0f293c;
+  font-size: 25px;
+  font-family: "Futura Light";
+}
+
+.nome {
+  color: #0f293c;
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.subscribe {
+  background-color: #b8cad8;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 50px 0 100px 0;
 }
