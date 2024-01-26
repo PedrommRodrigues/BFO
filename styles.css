@@ -959,6 +959,10 @@ form div {
 
 /* ----------------------------------------- EMBO Escola ----------------------------------------- */
 
+.embo-title {
+  color: #ab3b1d !important;
+}
+
 .embo-escola {
   display: flex;
   gap: 50px;
@@ -1005,7 +1009,10 @@ form div {
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   align-items: center;
   padding: 50px 0 100px 0;
+}
+
+.subscribe > p {
+  color: #0f293c;
 }
