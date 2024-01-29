@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMBO-subscrever</title>
+    <!-- ------------------------------- styles -------------------------------- -->
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- -------------------------------- font --------------------------------- -->
+
+    <link href="https://fonts.cdnfonts.com/css/gentium-basic" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/futura-lt" rel="stylesheet">
+
+    <!-- -------------------------------- icons -------------------------------- -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" href="Images/logos/banda-icon.ico" type="image/x-icon">
+
+
+    <!-- ------------------------------ bootstrap ------------------------------ -->
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="historial.html">Historial</a></li>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Agenda</a></li>
+                <li><a href="Escola.html">EMBO</a></li>
+                <li><a href="Contactos.html">Contactos</a></li>
+            </ul>
+        </div>
+        <div class="header-top">
+
+            <!--  title  -->
+            <div class="title">
+                <h1>BANDA</h1>
+                <h3>FILARMÓNICA</h3>
+                <h2>OVARENSE</h2>
+                <p>DESDE 1811</p>
+            </div>
+
+            <!--  navbar  -->
+
+            <nav class="navbar">
+                <button class="hamburger" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                </button>
+                <ul>
+                    <li> <a href="index.html">Página Inicial</a></li>
+                    <li> <a href="historial.html">Historial</a></li>
+                    <li> <a href="#">Quem Somos</a></li>
+                    <li> <a href="#">Agenda</a></li>
+                    <li> <a href="Escola.html">EMBO</a></li>
+                    <li> <a href="Contactos.html">Contactos</a></li>
+                </ul>
+                </>
+        </div>
+        <div class="header-bottom">
+            <p>Com a experiência de 210 anos de história</p>
+            <button class="btn-blue">| Ver mais |</button>
+        </div>
+    </div>
+
+    <section class="embo-partner">
+        <div class="embo-title orange">
+            <div class="embo-img"> <img src="Images/logos/EMBO.png" alt="embo logo"></div>
+            <h1>Escola de Música da Banda Ovarense</h1>
+        </div>
+        <div class="testing">
+            <div class="embo-contact">
+                <h1 class="orange">Inscreva-se já!</h1>
+                <p>(+351) 919184482 | (+351) 965619877</p>
+                <p>em.bandaovarense@gmail.com</p>
+                <p>RUA VISCONDE DE OVAR, 341 | 3880-272 SÃO MIGUEL - OVAR</p>
+                <div class="map"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3017.7955217030517!2d-8.610677787189934!3d40.85441297125304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd238533419afc6f%3A0xff05b59ed36e5e60!2sBanda%20Filarm%C3%B3nica%20Ovarense!5e0!3m2!1spt-PT!2spt!4v1700845593928!5m2!1spt-PT!2spt"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class=" partner-form">
+                <form action="https://formspree.io/f/mgegoloa" method="POST">
+                    <label for="fullName"><span class="red">*</span> Encarregado de Educação</label>
+                    <input type="text" name="Encarregado de Educação" id="fullName">
+                    <label for="email"><span class="red">*</span> Email</label>
+                    <input type="email" name="Email" id="email">
+                    <label for="phoneNumber"><span class="red">*</span> Contacto Telefónico</label>
+                    <input type="text" name="Número" id="phoneNumber">
+                    <label for="fullName"><span class="red">*</span> Nome completo do aluno</label>
+                    <input type="text" name="Nome completo do aluno" id="fullName">
+                    <label for="">Data de Nascimento</label>
+                    <input name="Data de nascimento" type="date">
+                    <label for="">Habilitações Literárias</label>
+                    <input name="Habilitações Literárias" type="text">
+                    <label for="">Habilitações Musicais</label>
+                    <input name="Habilitações Musicais" type="text">
+                    <div class="checkbox">
+                        <label>Já frequentou esta escola?</label>
+                        <div>
+                            <div class="checkbox-options"><input type="checkbox" name="Frequentou escola" id="payHome">
+                                <p>sim</p>
+                            </div>
+                            <div class="checkbox-options"><input name="Não frequentou escola" type="checkbox"
+                                    id="payHeadquarters">
+                                <p>Não</p>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="obs">Observações</label>
+                    <textarea id="obs" name="Observações" cols="30" rows="2"></textarea>
+                    <button class="btn-blue" type="submit">Submeter</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer">
+
+            <div class="footer-text">
+                <div class="footer-logo"><img src="Images/logos/Imagem2.png"></div>
+                <p>Com a experiência de 210 anos de história!</p>
+            </div>
+            <div class="social">
+                <p>Segue-nos:</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/banda.ovarense/"> <i
+                            class="fa-brands fa-xl fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/bandafilarmonicaovarense/"><i
+                            class="fa-brands fa-xl fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-contacts">
+                <div>
+                    <div class=" footer-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                        <p>(+351) 256573940</p>
+                        <p>(+351) 919184482</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <p>Rua Visconde de Ovar, 341</p>
+                        <p>3880-272 São Miguel - Ovar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

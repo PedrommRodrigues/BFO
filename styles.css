@@ -959,10 +959,6 @@ form div {
 
 /* ----------------------------------------- EMBO Escola ----------------------------------------- */
 
-.embo-title {
-  color: #ab3b1d !important;
-}
-
 .embo-escola {
   display: flex;
   gap: 50px;
@@ -1015,4 +1011,58 @@ form div {
 
 .subscribe > p {
   color: #0f293c;
+}
+
+/* ---------------------------------------- EMBO Partner ---------------------------------------- */
+
+.orange {
+  font-family: "Futura", sans-serif !important;
+  color: #ab3b1d;
+}
+
+.embo-partner {
+  background-color: #fff;
+  padding-top: 20px 0 100px 0;
+}
+
+.embo-partner > .embo-title {
+  text-align: center;
+}
+
+.embo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.embo-title > h1 {
+  /* font-family: "Futura", sans-serif !important; */
+  font-size: 35px !important;
+}
+
+.embo-img {
+  width: 130px;
+}
+
+.embo-img > img {
+  width: 100%;
+}
+
+.testing {
+  display: flex;
+  padding: 0 200px 0 200px;
+}
+
+.embo-contact {
+  text-align: center;
+}
+
+.embo-contact > h1 {
+  font-size: 36px;
+  margin: 100px 0 30px 0;
+}
+
+.embo-contact > .map {
+  padding-top: 100px;
 }
