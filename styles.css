@@ -913,8 +913,7 @@ form div {
 
 .checkbox > div {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  gap: 50px;
   margin-top: 10px;
 }
 
