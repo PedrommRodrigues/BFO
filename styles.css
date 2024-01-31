@@ -1036,7 +1036,6 @@ form div {
 }
 
 .embo-title > h1 {
-  /* font-family: "Futura", sans-serif !important; */
   font-size: 35px !important;
 }
 
@@ -1048,7 +1047,7 @@ form div {
   width: 100%;
 }
 
-.testing {
+.embo-partner-content {
   display: flex;
   padding: 0 200px 0 200px;
 }
@@ -1064,4 +1063,45 @@ form div {
 
 .embo-contact > .map {
   padding-top: 100px;
+}
+
+/* ------------------------------------ EMBO oferta ----------------------------------- */
+
+.oferta {
+  padding: 50px 0;
+  background-color: #dfdede;
+}
+
+.oferta > h1 {
+  color: #ab3b1d;
+  text-align: center;
+}
+
+.gray {
+  background-color: #f9f9f9;
+}
+
+.img-fluid {
+  height: 100% !important;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  border: none !important;
+}
+
+.card > img {
+  border-radius: 50% !important;
+}
+
+@media screen and (max-width: 900px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
 }
