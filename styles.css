@@ -108,7 +108,7 @@ p {
   padding: 15px 15px !important;
 }
 
-.navbar ul {
+.navbar > ul {
   display: flex;
   color: #3a3a3a;
   text-decoration: none;
@@ -1130,4 +1130,27 @@ form div {
 
 .card {
   --bs-card-title-spacer-y: 0rem !important;
+}
+
+/* ------------------------------- teste menu ------------------------------- */
+
+.sub-menu {
+  position: relative;
+}
+
+.sub-menu > div {
+  background-color: #cfdff2;
+  top: 37px;
+  border-radius: 5px;
+  padding: 10px 0px 10px 15px;
+  position: absolute;
+  width: 150px;
+}
+
+.sub-menu-section > ul {
+  padding: 0px;
+}
+
+.toggle-menu {
+  display: none;
 }
