@@ -1154,3 +1154,7 @@ form div {
 .toggle-menu {
   display: none;
 }
+
+#embomenu {
+  cursor: pointer;
+}

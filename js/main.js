@@ -18,28 +18,23 @@ function expandHanddler() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const container = document.getElementById("imageContainer");
-  const numberOfImages = 52;
-  for (let i = 1; i <= numberOfImages; i++) {
-    const img = document.createElement("img");
-    img.src = `Images/historial/${i}.png`;
-    img.alt = "fotografia da banda";
-    container.appendChild(img);
-  }
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   const container = document.getElementById("imageContainer");
+//   const numberOfImages = 52;
+//   for (let i = 1; i <= numberOfImages; i++) {
+//     const img = document.createElement("img");
+//     img.src = `Images/historial/${i}.png`;
+//     img.alt = "fotografia da banda";
+//     container.appendChild(img);
+//   }
+// });
 
-const payAtHome = document.getElementById("payHome");
-const payAtHeadquarters = document.getElementById("payHeadquarters");
+/* ---------------------------------- test ---------------------------------- */
 
-payAtHome.addEventListener("change", function () {
-  if (payAtHome.checked) {
-    payAtHeadquarters.checked = false;
-  }
-});
+const emboMenu = document.getElementById("embomenu");
 
-payAtHeadquarters.addEventListener("change", function () {
-  if (payAtHeadquarters.checked) {
-    payAtHome.checked = false;
-  }
-});
+const toggleMenus = () => {
+  const emboMenuDropDown = document.getElementById("embo-dropdown");
+  emboMenuDropDown.classList.toggle("toggle-menu");
+};
+emboMenu.addEventListener("click", toggleMenus);
