@@ -1033,6 +1033,7 @@ form div {
   align-items: center;
   justify-content: center;
   gap: 60px;
+  color: #ab3b1d !important;
 }
 
 .embo-title > h1 {
