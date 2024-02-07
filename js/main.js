@@ -32,9 +32,11 @@ function expandHanddler() {
 /* ---------------------------------- test ---------------------------------- */
 
 const emboMenu = document.getElementById("embomenu");
+const chev = document.getElementById("chevron");
 
 const toggleMenus = () => {
   const emboMenuDropDown = document.getElementById("embo-dropdown");
   emboMenuDropDown.classList.toggle("toggle-menu");
+  chev.classList.toggle("rotate");
 };
 emboMenu.addEventListener("click", toggleMenus);
